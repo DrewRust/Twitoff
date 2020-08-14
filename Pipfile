@@ -4,18 +4,17 @@ url = "https://pypi.org/simple"
 verify_ssl = true
 
 [dev-packages]
-jupyter = "*"
-matplotlib = "*"
 
 [packages]
+psycopg2-binary = "*"
+pandas = "*"
 flask = "*"
 flask-sqlalchemy = "*"
 tweepy = "*"
 basilica = "*"
 python-dotenv = "*"
-twitter-scraper = "*"
 scikit-learn = "*"
-pandas = "*"
+gunicorn = "*"
 
 [requires]
 python_version = "3.8"
