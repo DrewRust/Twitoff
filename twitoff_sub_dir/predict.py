@@ -7,10 +7,12 @@ from .twitter import BASILICA
 
 def predict_user(user1, user2, tweet_text):
     '''Determine and return which user is more likely to say a given tweet.
+
     # Arguments:
         user1: str, twitter user name for user 1 in comparison from web form
         user2: str, twitter user name for user 1 in comparison from web form
         tweet_text: str, tweet text to evaluate
+
     # Returns:
         prediction from logistic regression model
     '''

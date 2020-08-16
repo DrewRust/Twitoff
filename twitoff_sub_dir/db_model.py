@@ -1,4 +1,3 @@
-
 '''SQLAlchemy models for Twitoff'''
 from flask_sqlalchemy import SQLAlchemy
 
@@ -25,5 +24,3 @@ class Tweet(db.Model):
 
     def __repr__(self):
         return '<Tweet %r>' % self.text
-
-
