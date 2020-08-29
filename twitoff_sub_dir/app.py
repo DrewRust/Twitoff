@@ -4,14 +4,14 @@ from dotenv import load_dotenv
 from .db_model import db, User
 from .twitter import add_user_tweepy, update_all_users
 from .predict import predict_user
-
+# one change
 load_dotenv()
 
 def create_app():
     '''Create and configure an instance of the Flask application'''
 
     app = Flask(__name__)
-    app.config["SQLALCHEMY_DATABASE_URI"] = getenv('SQLITE_DATABASE_URL')
+    app.config["SQLALCHEMY_DATABASE_URI"] = getenv('DATABASE_URL')
     app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
     db.init_app(app)
 
